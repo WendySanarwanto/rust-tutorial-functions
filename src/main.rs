@@ -1,13 +1,16 @@
 use std::io;
 
+// Add 2 numbers, specified in method's arguments and returns the result of addition immediately.
 fn do_add(left: i32, right: i32) -> i32 {
     left + right
 }
 
+// Prints the number specified in the method's argument.
 fn print_total(total: i32) {
     println!("The total of number addition is {}", total);
 }
 
+// Wait for user's input, parse the entered input as number in a loop. It breaks from loop if the entered number is valid.
 fn read_line_number() -> i32 {
     let result: i32;
     let stdin = io::stdin();
@@ -25,6 +28,7 @@ fn read_line_number() -> i32 {
     result
 }
 
+// The main function
 fn main() {
     println!("\nRust Function's Demo.");
     println!("=====================\n");
